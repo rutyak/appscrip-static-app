@@ -1,0 +1,102 @@
+.container {
+    width: 91%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filterLink {
+    text-decoration: none;
+    color: lightgrey;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .bodyTop{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .sortDropdown {
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card p {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .card span {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .link {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signInHeart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .favoriteButton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .favoriteButton:hover {
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

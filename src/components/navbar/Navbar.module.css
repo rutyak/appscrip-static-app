@@ -1,0 +1,93 @@
+/* General Reset */
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Top Bar */
+.topBar {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.topItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #EB4C6B;
+  font-weight: 500;
+}
+
+/* Main Navbar */
+.mainNavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin: 20px 40px 20px 40px;
+}
+
+.topIcons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin-bottom: 50px;
+}
+
+/* Logo */
+.logo {
+   font-weight: bold;
+    font-size: 35px;
+    margin-left: 189px;
+}
+
+/* Navigation Links */
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.navLinks a:hover {
+  color: #555;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.languageDropdown {
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+  .mainNavbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
