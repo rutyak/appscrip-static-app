@@ -10,12 +10,11 @@
     flex-direction: column;
     gap: 10px;
   }
-
-  .contactus{
+  
+  .contactus {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
   }
   
   .newsletter h3 {
@@ -80,7 +79,6 @@
   
   .socials a {
     display: inline-block;
-    margin-right: 10px;
     font-size: 14px;
     color: #fff;
   }
@@ -92,23 +90,80 @@
   
   .copyright {
     text-align: center;
-    border-top: 1px solid #333;
     padding-top: 20px;
     font-size: 12px;
   }
-
-  .topFooter{
+  
+  .topFooter {
     display: flex;
     justify-content: space-between;
     margin: 10px 90px 10px 90px;
   }
   
-  .bottomFooter{
-    display: flex;
-    flex-direction: column;
+  .bottomFooter {
     margin: 10px 90px 10px 90px;
   }
 
+  .followUs{
+    text-align:"left";
+    margin-right: 170px;
+  }
+  
+  @media (max-width: 884px) {
+    .footer {
+      padding: 30px 15px;
+    }
+  
+    .sections {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  
+    .sections div {
+      text-align: center;
+      margin: 20px 0;
+      min-width: 250px;
+    }
+  
+    .inputWrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .inputWrapper input {
+      width: 200px;
+    }
+  
+    .inputWrapper button {
+      width: 220px;
+    }
+  
+    .topFooter {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      margin: 20px 0;
+    }
+  
+    .bottomFooter {
+      margin: 20px 0;
+    }
+
+    .contactus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .followUs{
+        text-align: "center";
+        margin-right: 0; 
+    }
+  }
+  
   @media (max-width: 768px) {
     .sections {
       flex-direction: column;
@@ -121,3 +176,52 @@
     }
   }
   
+  @media (max-width: 360px) {
+    .footer {
+      padding: 20px 5px;
+    }
+  
+    .sections {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sections div {
+      text-align: center;
+      margin: 15px 0;
+      min-width: 100%;
+    }
+  
+    .inputWrapper input {
+      width: 150px;
+    }
+  
+    .inputWrapper button {
+      width: 170px;
+    }
+  
+    .socials a {
+      font-size: 10px;
+    }
+  
+    .paymentMethods img {
+      width: 30px;
+      margin-right: 5px;
+    }
+  
+    .topFooter {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 10px 0;
+    }
+  
+    .bottomFooter {
+      margin: 10px 0;
+    }
+  
+    .followUs {
+      text-align: center;
+      margin-right: 0;
+    }
+  }

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import {
   AppLogo,
+  BurgerIcon,
   DropDownIcon,
   HeartIcon,
   ProfileIcon,
@@ -13,7 +14,6 @@ import {
 const Navbar = () => {
   return (
     <navbar className={styles.navbar}>
-      {/* Top Bar */}
       <div className={styles.topBar}>
         <div className={styles.topItem}>
           <TopNavbarIcon /> Lorem ipsum dolor
@@ -29,8 +29,13 @@ const Navbar = () => {
       {/* Main Navbar */}
       <div className={styles.mainNavbar}>
         <div className={styles.topIcons}>
-          <div>
-            <AppLogo />
+          <div className={styles.burgerLogo}>
+            <div className={styles.burgerIcon}>
+              <BurgerIcon />
+            </div>
+            <div>
+              <AppLogo />
+            </div>
           </div>
 
           <div className={styles.logo}>LOGO</div>
@@ -39,7 +44,9 @@ const Navbar = () => {
             <SearchIcon />
             <HeartIcon />
             <ShopIcon />
-            <ProfileIcon />
+            <div className={styles.profileIcon}>
+              <ProfileIcon />
+            </div>
             <div className={styles.languageDropdown}>
               ENG <DropDownIcon />
             </div>
@@ -48,14 +55,12 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <nav className={styles.navLinks}>
-          <a href="/">SHOP</a>
-          <a href="/">SKILLS</a>
-          <a href="/">STORIES</a>
-          <a href="/">ABOUT</a>
-          <a href="/">CONTACT US</a>
+          <a href="#">SHOP</a>
+          <a href="#">SKILLS</a>
+          <a href="#">STORIES</a>
+          <a href="#">ABOUT</a>
+          <a href="#">CONTACT US</a>
         </nav>
-
-        {/* Icons */}
       </div>
       <hr></hr>
     </navbar>

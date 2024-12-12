@@ -1,102 +1,163 @@
 .container {
-    width: 91%;
-    margin: auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .filterLink {
-    text-decoration: none;
-    color: lightgrey;
-    text-decoration: underline;
-    font-weight: bold;
-  }
+  width: 91%;
+  margin: auto;
+  padding: 20px;
+}
 
-  .bodyTop{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .sortDropdown {
-    font-size: medium;
-    font-weight: bold;
-  }
-  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filterLink {
+  text-decoration: none;
+  color: lightgrey;
+  background-color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  border: none;
+}
+
+.bodyTop {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.sortDropdown {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card p {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card span {
+  color: #888;
+  font-size: 14px;
+}
+
+.link {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signInHeart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favoriteButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.favoriteButton:hover {
+  color: #000;
+}
+
+.filterStyle {
+  display: flex;
+}
+
+.loader {
+  font-size: 24px;
+  color: #888;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dropdown {
+  font-size: 14px;
+  padding: 8px;
+  border: none;
+}
+
+.mobileFilter {
+  display: none;
+}
+
+@media (max-width: 884px) {
   .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
   }
-  
-  .card {
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    background: #fff;
-    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .card p {
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .card span {
-    color: #888;
-    font-size: 14px;
-  }
-  
-  .link {
-    color: #0070f3;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .signInHeart{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+@media (max-width: 360px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
   }
 
-  .favoriteButton {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    color: #888;
-    font-size: 20px;
-    cursor: pointer;
+  .container {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
   }
-  
-  .favoriteButton:hover {
-    color: #000;
+
+  .mobileFilter {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 7.5px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
   }
-  
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .grid {
-      grid-template-columns: 1fr;
-    }
+
+  .bodyTop {
+    display: none;
   }
-  
+
+  .dropdown {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    border-radius: 0px;
+    font-weight: bold;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}

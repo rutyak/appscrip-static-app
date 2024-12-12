@@ -1,0 +1,54 @@
+.sidebar {
+    padding: 1rem;
+    width: 300px;
+    max-width: 100%;
+    border-right: 1px solid #ddd;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .filterItem {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+  }
+  
+  .filterItem summary {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .filterContent {
+    margin-top: 0.5rem;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .unselectAll {
+    font-size: 0.9rem;
+    color: #0070f3;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  
+  .unselectAll:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+  

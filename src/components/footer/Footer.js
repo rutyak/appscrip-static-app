@@ -70,7 +70,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className={styles.followUs} style={{}}>
             <h4>FOLLOW US</h4>
             <div className={styles.socials}>
               <InstaIcon />
