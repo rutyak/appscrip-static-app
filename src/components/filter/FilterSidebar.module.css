@@ -30,8 +30,16 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
+  }
+
+  .fontCheck{
+    font-weight: 600;
+  }
+
+  .mainCheck{
+    transform: scale(1.5);
   }
   
   .unselectAll {

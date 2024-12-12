@@ -1,12 +1,7 @@
 import {
   AllCardsIcon,
-  AmexIcon,
-  ApplePayIcon,
-  CardIcon,
-  Gpay,
   InstaIcon,
   LinkedIcon,
-  UniquePayIcon,
   USAflag,
 } from "../../../public/icons/Icons";
 import styles from "./Footer.module.css";
@@ -45,36 +40,42 @@ function Footer() {
 
       <div className={styles.bottomFooter}>
         <div className={styles.sections}>
-          <div>
-            <h4>metta muse</h4>
-            <ul>
-              <li>About Us</li>
-              <li>Stories</li>
-              <li>Artisans</li>
-              <li>Boutiques</li>
-              <li>Contact Us</li>
-              <li>EU Compliances Docs</li>
-            </ul>
-          </div>
+          <div className={styles.bottomFooterLeft}>
+            <div>
+              <h4>metta muse</h4>
+              <ul>
+                <li>About Us</li>
+                <li>Stories</li>
+                <li>Artisans</li>
+                <li>Boutiques</li>
+                <li>Contact Us</li>
+                <li>EU Compliances Docs</li>
+              </ul>
+            </div>
 
-          <div>
-            <h4>QUICK LINKS</h4>
-            <ul>
-              <li>Orders & Shipping</li>
-              <li>Join/Login as a Seller</li>
-              <li>Payment & Pricing</li>
-              <li>Return & Refunds</li>
-              <li>FAQs</li>
-              <li>Privacy Policy</li>
-              <li>Terms & Conditions</li>
-            </ul>
+            <div>
+              <h4>QUICK LINKS</h4>
+              <ul>
+                <li>Orders & Shipping</li>
+                <li>Join/Login as a Seller</li>
+                <li>Payment & Pricing</li>
+                <li>Return & Refunds</li>
+                <li>FAQs</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
           </div>
 
           <div className={styles.followUs} style={{}}>
             <h4>FOLLOW US</h4>
             <div className={styles.socials}>
-              <InstaIcon />
-              <LinkedIcon />
+              <div>
+                <LinkedIcon />
+              </div>
+              <div>
+                <InstaIcon />
+              </div>
             </div>
             <h4>metta muse ACCEPTS</h4>
             <div className={styles.paymentMethods}>

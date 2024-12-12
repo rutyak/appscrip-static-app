@@ -2,17 +2,18 @@ import { useEffect, useState } from "react";
 import styles from "./Body.module.css";
 import { HeartIcon, ShowFilter } from "../../../public/icons/Icons";
 import FilterSidebar from "../filter/FilterSideBar";
+import Dropdown from "./Dropdown";
 
 function Body() {
   const [data, setData] = useState([]);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); 
-  
+  const [isLoading, setIsLoading] = useState(true);
+
   const getData = async () => {
     const res = await fetch("https://dummyjson.com/products");
-    const json = await res.json();
-    setData(json.products);
-    setIsLoading(false); 
+    const data = await res.json();
+    setData(data.products);
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -26,27 +27,16 @@ function Body() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        
         <div className={styles.bodyTop}>
-          <span>{data.length} ITEMS</span>
+          <span style={{fontWeight:"600"}}>{data.length} ITEMS</span>
           <button className={styles.filterLink} onClick={toggleFilter}>
             <ShowFilter /> {isFilterOpen ? "HIDE FILTER" : "SHOW FILTER"}
           </button>
         </div>
-        <div className={styles.mobileFilter}><span>Filter</span>|</div>
-        <div className={styles.dropdownContainer}>
-          <select
-            id="dropdown"
-            className={styles.dropdown}
-            defaultValue="recommended"
-          >
-            <option value="recommended">Recommended</option>
-            <option value="newest">Newest First</option>
-            <option value="popular">Popular</option>
-            <option value="high-to-low">Price: High to Low</option>
-            <option value="low-to-high">Price: Low to High</option>
-          </select>
+        <div className={styles.mobileFilter}>
+          <span>Filter</span>|
         </div>
+        <Dropdown/>
       </div>
       <div className={styles.filterStyle}>
         {isFilterOpen && (

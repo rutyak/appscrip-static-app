@@ -16,7 +16,7 @@ const FilterSidebar = () => {
     <div className={styles.sidebar}>
       <div className={styles.filterItem}>
         <label className={styles.checkbox}>
-          <input type="checkbox" /> Customizable
+          <input type="checkbox" className={styles.mainCheck}/><p className={styles.fontCheck}>Customizable</p>
         </label>
       </div>
       {filters.map((filter, index) => (

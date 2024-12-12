@@ -26,7 +26,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Main Navbar */}
       <div className={styles.mainNavbar}>
         <div className={styles.topIcons}>
           <div className={styles.burgerLogo}>
@@ -53,7 +52,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Navigation Links */}
         <nav className={styles.navLinks}>
           <a href="#">SHOP</a>
           <a href="#">SKILLS</a>
